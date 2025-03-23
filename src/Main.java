@@ -46,6 +46,16 @@ public class Main {
         System.out.println("За сутки минут машина произвела " + botInDay + " штук бутылок");
         System.out.println("За три дня минут машина произвела " + bot3day + " штук бутылок");
         System.out.println("За месяц минут машина произвела " + botMonth + " штук бутылок");
+        //task 5
+        byte canPaintall = 120;
+        byte canWhiteonClass = 2;
+        byte canBrownonClass = 4;
+        byte canSummonClass = (byte) (canBrownonClass + canWhiteonClass);
+        byte schoolClasses = (byte) (canPaintall / canSummonClass);
+        byte canWhiteonSchool = (byte) (canWhiteonClass * schoolClasses);
+        byte canBrownonSchool = (byte) (canBrownonClass * schoolClasses);
+        System.out.println("В школе, где "+ schoolClasses + " классов, нужно " + canWhiteonSchool + " банок белой краски и "+ canBrownonSchool +" банок коричневой краски");
+
 
 
 
