@@ -42,7 +42,10 @@ public class Main {
         long bot3day = (botInDay*3);
         long botMonth = botInDay * dayInMonth;
 
-        System.out.println("За 20 минут машина произвела … штук бутылок");
+        System.out.println("За 20 минут машина произвела " + bot20min + " штук бутылок");
+        System.out.println("За сутки минут машина произвела " + botInDay + " штук бутылок");
+        System.out.println("За три дня минут машина произвела " + bot3day + " штук бутылок");
+        System.out.println("За месяц минут машина произвела " + botMonth + " штук бутылок");
 
 
 
