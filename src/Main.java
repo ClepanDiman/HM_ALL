@@ -55,6 +55,32 @@ public class Main {
         byte canWhiteonSchool = (byte) (canWhiteonClass * schoolClasses);
         byte canBrownonSchool = (byte) (canBrownonClass * schoolClasses);
         System.out.println("В школе, где "+ schoolClasses + " классов, нужно " + canWhiteonSchool + " банок белой краски и "+ canBrownonSchool +" банок коричневой краски");
+        //task 6
+        // Бананы — 5 штук (1 банан — 80 грамм).
+        // Молоко — 200 мл (100 мл = 105 грамм).
+        // Мороженое-пломбир — 2 брикета по 100 грамм.
+        // Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
+        byte banQuantity = 5;
+        byte oneBanWeght = 80;
+        short banAllWeght = (short) (banQuantity * oneBanWeght);
+        short milkQuantity = 200;
+        byte milkServ = 105;
+        short milkAll = (short) ((milkQuantity/100) * milkServ);
+        byte iceCreamQuantity = 2;
+        byte iceCreamWeght = 100;
+        short iceCreamAll = (short) (iceCreamQuantity * iceCreamWeght);
+        byte eggQuantity = 5;
+        byte oneEggWeght = 70;
+        short eggAll = (short) (eggQuantity * oneEggWeght);
+
+        short blender = (short) (eggAll + iceCreamAll + milkAll + banAllWeght);
+        float blenderInKilo = (eggAll + iceCreamAll + milkAll + banAllWeght)/1000f;
+        System.out.println("Этот завтрак весит "+ blender + " грамм или " + blenderInKilo +" килограмм. Приятного аппетита!");
+
+
+
+
+
 
 
 
