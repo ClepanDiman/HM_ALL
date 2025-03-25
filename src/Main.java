@@ -97,13 +97,31 @@ public class Main {
         //
         //Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
 
-        int marySalary = 67760;
-        int denSalary = 83690;
-        int chrisSalary = 76230;
+
+        float marySalary = 67760;// взял флоат тк деньги у нас всегда считаются с копейками
+        float denSalary = 83690;
+        float chrisSalary = 76230;
+        byte quanMonth = 11; //количество месяцев(рабочих) в году. Один месяц для отпуска.
         float ratioPlus = 0.1f;
         float raisMarySalary = marySalary * ratioPlus;
         float raisDenSalary = denSalary * ratioPlus;
         float raisChrisSalary = chrisSalary * ratioPlus;
+        float annualMaryInc = marySalary * quanMonth;
+        float annualDenInc = denSalary * quanMonth;
+        float annualChrisInc = chrisSalary * quanMonth;
+        float annualrMaryInc = raisMarySalary * quanMonth;
+        float annualrDenInc = raisDenSalary * quanMonth;
+        float annualrChrisInc = raisChrisSalary * quanMonth;
+        float annDiffMary = annualrMaryInc - annualMaryInc;
+        float annDiffDen = annualrDenInc - annualDenInc;
+        float annDiffChris = annualrChrisInc - annualChrisInc;
+
+
+
+
+
+
+
 
 
 
