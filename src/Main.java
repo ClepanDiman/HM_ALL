@@ -81,31 +81,20 @@ public class Main {
         short fistDaysForLos = (short) ((short) (losTarget*1000) / losPerDayOne);
         short secDaysForLos = (short) ((short) (losTarget*1000) / losPerDayTwo);
         double midLosPerDay = (losPerDayOne + losPerDayTwo) /2;
-        double midDayaForLos = (losTarget*1000) / losPerDayTwo;
+        double midDayaForLos = (losTarget*1000) / midLosPerDay;
 
         System.out.println("Для сброса "+ losTarget +" килограмм по "+losPerDayOne+" грамм в день, у спортсмена уйдет "+ fistDaysForLos + " дней");
         System.out.println("Для сброса "+ losTarget +" килограмм по "+losPerDayOne+" грамм в день, у спортсмена уйдет " + secDaysForLos+" дней");
         System.out.println("Среднее значение потери грамм в день " + midLosPerDay + " Среднее количество дней на похудение " + midDayaForLos);
         //task 8
-
-        //Маша получает 67 760 рублей в месяц.
-        //Денис получает 83 690 рублей в месяц.
-        //Кристина получает 76 230 рублей в месяц.
-        //Каждому нужно увеличить зарплату на 10% от текущей месячной. Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
-        //
-        //Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
-        //
-        //Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
-
-
         float marySalary = 67760;// взял флоат тк деньги у нас всегда считаются с копейками
         float denSalary = 83690;
         float chrisSalary = 76230;
         byte quanMonth = 11; //количество месяцев(рабочих) в году. Один месяц для отпуска.
         float ratioPlus = 0.1f;
-        float raisMarySalary = marySalary * ratioPlus;
-        float raisDenSalary = denSalary * ratioPlus;
-        float raisChrisSalary = chrisSalary * ratioPlus;
+        float raisMarySalary = marySalary + (marySalary * ratioPlus);
+        float raisDenSalary = denSalary + (denSalary * ratioPlus);
+        float raisChrisSalary = chrisSalary + (chrisSalary * ratioPlus);
         float annualMaryInc = marySalary * quanMonth;
         float annualDenInc = denSalary * quanMonth;
         float annualChrisInc = chrisSalary * quanMonth;
