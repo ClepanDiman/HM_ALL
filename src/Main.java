@@ -116,7 +116,9 @@ public class Main {
         float annDiffDen = annualrDenInc - annualDenInc;
         float annDiffChris = annualrChrisInc - annualChrisInc;
 
-
+        System.out.println("Маша теперь получает " + raisMarySalary + " рублей. Годовой доход вырос на " + annDiffMary + " рублей");
+        System.out.println("Денис теперь получает " + raisDenSalary + " рублей. Годовой доход вырос на " + annDiffDen + " рублей");
+        System.out.println("Кристина теперь получает " + raisChrisSalary + " рублей. Годовой доход вырос на " + annDiffChris + " рублей");
 
 
 
