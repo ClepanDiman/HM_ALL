@@ -56,10 +56,7 @@ public class Main {
         byte canBrownonSchool = (byte) (canBrownonClass * schoolClasses);
         System.out.println("В школе, где "+ schoolClasses + " классов, нужно " + canWhiteonSchool + " банок белой краски и "+ canBrownonSchool +" банок коричневой краски");
         //task 6
-        // Бананы — 5 штук (1 банан — 80 грамм).
-        // Молоко — 200 мл (100 мл = 105 грамм).
-        // Мороженое-пломбир — 2 брикета по 100 грамм.
-        // Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
+
         byte banQuantity = 5;
         byte oneBanWeght = 80;
         short banAllWeght = (short) (banQuantity * oneBanWeght);
@@ -76,14 +73,32 @@ public class Main {
         short blender = (short) (eggAll + iceCreamAll + milkAll + banAllWeght);
         float blenderInKilo = (eggAll + iceCreamAll + milkAll + banAllWeght)/1000f;
         System.out.println("Этот завтрак весит "+ blender + " грамм или " + blenderInKilo +" килограмм. Приятного аппетита!");
+        //task 7
 
+        short losPerDayOne = 250;
+        short losPerDayTwo = 500;
+        byte losTarget = 7; // тут в кг (будем переводить)
+        short fistDaysForLos = (short) ((short) (losTarget*1000) / losPerDayOne);
+        short secDaysForLos = (short) ((short) (losTarget*1000) / losPerDayTwo);
+        double midLosPerDay = (losPerDayOne + losPerDayTwo) /2;
+        double midDayaForLos = (losTarget*1000) / losPerDayTwo;
 
-
-
-
-
-
-
+        System.out.println("Для сброса "+ losTarget +" килограмм по "+losPerDayOne+" грамм в день, у спортсмена уйдет "+ fistDaysForLos + " дней");
+        System.out.println("Для сброса "+ losTarget +" килограмм по "+losPerDayOne+" грамм в день, у спортсмена уйдет " + secDaysForLos+" дней");
+        System.out.println("Среднее значение потери грамм в день " + midLosPerDay + " Среднее количество дней на похудение " + midDayaForLos);
+        //task 8
+        //Представим, что мы работаем в большой компании, штат которой состоит из нескольких сотен сотрудников. В компании есть правило: чем дольше сотрудник работает в компании, тем ценнее он для бизнеса. Поэтому сотрудники, которые работают в компании дольше 3 лет, получают повышение зарплаты раз в год. Каждый год повышение составляет 10% от текущей зарплаты.
+        //
+        //К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+        //
+        //Маша получает 67 760 рублей в месяц.
+        //Денис получает 83 690 рублей в месяц.
+        //Кристина получает 76 230 рублей в месяц.
+        //Каждому нужно увеличить зарплату на 10% от текущей месячной. Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+        //
+        //Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+        //
+        //Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
 
     }
 }
